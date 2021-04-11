@@ -1,0 +1,59 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+      "fruits": {
+        "type": "array",
+        "items": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "string"
+          },
+          {
+            "type": "string"
+          }
+        ]
+      },
+      "vegetables": {
+        "type": "array",
+        "items": [
+          {
+            "type": "object",
+            "properties": {
+              "veggieName": {
+                "type": "string"
+              },
+              "veggieLike": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "veggieName",
+              "veggieLike"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "veggieName": {
+                "type": "string"
+              },
+              "veggieLike": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "veggieName",
+              "veggieLike"
+            ]
+          }
+        ]
+      }
+    },
+    "required": [
+      "fruits",
+      "vegetables"
+    ]
+  }

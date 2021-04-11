@@ -1,0 +1,120 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+      "vat": {
+        "type": "integer"
+      },
+      "name": {
+        "type": "string"
+      },
+      "address": {
+        "type": "string"
+      },
+      "zipcode": {
+        "type": "integer"
+      },
+      "city": {
+        "type": "string"
+      },
+      "phone": {
+        "type": "integer"
+      },
+      "email": {
+        "type": "string"
+      },
+      "employees": {
+        "type": "string"
+      },
+      "industrydesc": {
+        "type": "string"
+      },
+      "companydesc": {
+        "type": "string"
+      },
+      "creditbankrupt": {
+        "type": "boolean"
+      },
+      "productionunits": {
+        "type": "array",
+        "items": [
+          {
+            "type": "object",
+            "properties": {
+              "pno": {
+                "type": "integer"
+              },
+              "name": {
+                "type": "string"
+              },
+              "address": {
+                "type": "string"
+              },
+              "zipcode": {
+                "type": "integer"
+              },
+              "city": {
+                "type": "string"
+              },
+              "phone": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "pno",
+              "name",
+              "address",
+              "zipcode",
+              "city",
+              "phone"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "email": {
+                "type": "string"
+              },
+              "startdate": {
+                "type": "string"
+              },
+              "enddate": {
+                "type": "string"
+              },
+              "employees": {
+                "type": "null"
+              },
+              "industrydesc": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "email",
+              "startdate",
+              "enddate",
+              "employees",
+              "industrydesc"
+            ]
+          }
+        ]
+      },
+      "version": {
+        "type": "integer"
+      }
+    },
+    "required": [
+      "vat",
+      "name",
+      "address",
+      "zipcode",
+      "city",
+      "phone",
+      "email",
+      "employees",
+      "industrydesc",
+      "companydesc",
+      "creditbankrupt",
+      "productionunits",
+      "version"
+    ]
+  }

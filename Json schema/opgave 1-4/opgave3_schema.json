@@ -1,0 +1,104 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+      "vejnavn": {
+        "type": "object",
+        "properties": {
+          "kode": {
+            "type": "string"
+          },
+          "navn": {
+            "type": "string"
+          },
+          "husnr": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "kode",
+          "navn",
+          "husnr"
+        ]
+      },
+      "postnummer": {
+        "type": "object",
+        "properties": {
+          "nr": {
+            "type": "string"
+          },
+          "navn": {
+            "type": "string"
+          },
+          "kommune": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "nr",
+          "navn",
+          "kommune"
+        ]
+      },
+      "wgs84koordinat": {
+        "type": "object",
+        "properties": {
+          "bredde": {
+            "type": "string"
+          },
+          "laengde": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "bredde",
+          "laengde"
+        ]
+      },
+      "tjenesteart": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "navn": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "navn"
+        ]
+      },
+      "teknologi": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "navn": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "navn"
+        ]
+      },
+      "unik_station_navn": {
+        "type": "string"
+      },
+      "frekvensbaand": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "vejnavn",
+      "postnummer",
+      "wgs84koordinat",
+      "tjenesteart",
+      "teknologi",
+      "unik_station_navn",
+      "frekvensbaand"
+    ]
+  }
